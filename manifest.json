@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Rud Extension",
+  "version": "1.00.11",
+  "description": "Internship extension",
+  "icons": {
+    "16": "./icon/icon.png",
+    "48": "./icon/icon.png",
+    "128": "./icon/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://example.com/"
+      ],
+      "js": [
+        "source.js"
+      ],
+      "css": [
+        "style.css"
+      ]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ]
+}
